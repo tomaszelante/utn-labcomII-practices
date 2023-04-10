@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Prac2)Perfil</title>
+</head>
+<center>
+    <body>
+        <h1>PERFIL DEL USUARIO</h1>
+        <form>
+            <fieldset>
+                <label for="tup" style="background-color: rgb(177, 177, 177);">TUP:</label>
+                <input type="text" id="tup" name="tup" value="Estudiante" readonly/>
+                <br/>
+                <br/>
+                <label for="nombre" style="background-color: rgb(177, 177, 177);">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" size="20" maxlength="15" required/>
+                <label for="apellido" style="background-color: rgb(126, 125, 125);">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" size="20" maxlength="15" required/>
+                <br/>
+                <br/>
+                <label for="email" style="background-color: rgb(177, 177, 177);">Email:</label>
+                <input type="text" name="email" id="email" required/>
+                <br/>
+                <br/>
+                <label for="edad" style="background-color: rgb(177, 177, 177);">Edad:</label>
+                <input type="age" name="edad" id="edad" size="3" maxlength="2" required/>
+                <br/>
+                <br/>
+                <label for="nacionalidad" style="background-color: rgb(177, 177, 177);">Nacionalidad:</label>
+                <select name="nacionalidad" id="nacionalidad" required>
+                    <option value="Argentina" selected>Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Chile">Chile</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="ocupacion" style="background-color: rgb(177, 177, 177);">Condicion laboral:</label>
+                <select name="ocupacion" id="ocupacion" required>
+                    <option value="Desempleado" selected>desempleado</option>
+                    <option value="En busqueda laboral">En busqueda laboral</option>
+                    <option value="Trabajo part-time">Trabajo part-time</option>
+                    <option value="Trabajo full-time">Trabajo full-time</option>
+                </select>
+            </fieldset>
+            <br/>
+            <br/>
+            <p style="background-color:black ;color:white">GUSTOS PERSONALES</p>
+            <br/>
+            <br/>
+            <fieldset>
+                <label for="musica" style="background-color: rgb(177, 177, 177);">Genero musical mas escuchado:</label>
+                <input type="text" name="musica" id="musica"/>
+                <br/>
+                <br/>
+                <label for="comida" style="background-color: rgb(177, 177, 177);">Comida que prefiero:</label>
+                <select name="comida" id="comida">
+                    <option value="Hamburguesa">Hamburguesa</option>
+                    <option value="Pizza"> Pizza</option>
+                    <option value="Ensalada">Ensalada</option>
+                    <option value="Asado">Asado</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="pelicula" style="background-color: rgb(177, 177, 177);">Pelicula favorita</label>
+                <input type="text" name="pelicula" id="pelicula"/>
+            </fieldset>
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <br/>
+            <label for="checkbox" style="background-color: rgb(177, 177, 177);">Guardar datos de inicio de sesion.</label>
+                <input 
+                    type="checkbox" 
+                    name="checkbox" 
+                    id="checkbox"
+                />
+        </form>
+    </body>
+</center>
+</html>
